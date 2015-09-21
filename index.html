@@ -1,97 +1,131 @@
-
 <!DOCTYPE html>
-<html lang="tr">
-<title>Pisi Linux - Özgürlük Şimdi Başladı.</title>
-<meta name="description" content="Pisi Linux - Özgürlük Şimdi Başladı.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./stylesheet.css">
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cubuk" aria-expanded="false">
-        <span class="sr-only">Menü</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"> <img src="http://i.hizliresim.com/j2l3DL.png" height="75px" width="75px"></a>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PisiLinux</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-header">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Açılır Menü</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logo.png" width="75" height="75" /></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Ana Sayfa</a></li>
+            <li><a href="#">Hakkında</a></li>
+            <li><a href="#">Soru & Cevap</a></li>
+            <li><a href="#">Dökümantasyon</a></li>
+            <li><a href="#">Hata Takip</a></li>
+            <li><a href="#">Bağış Yap</a></li>
+            <li><a href="#">İletişim</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Türkçe <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="active">Türkçe</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Deutch</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="mySlider" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+            <li data-target="#mySlider" data-slide-to="1"></li>
+            <li data-target="#mySlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('https://raw.githubusercontent.com/prdsmehmetstc/pisiartwork/master/Wallpapers/Pisi-Material-7.png');"></div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('https://raw.githubusercontent.com/prdsmehmetstc/pisiartwork/master/Wallpapers/Pisi-Material-6.png');"></div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('https://raw.githubusercontent.com/prdsmehmetstc/pisiartwork/master/Wallpapers/Pisi-Material-5.png');"></div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#mySlider" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#mySlider" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
     </div>
-    <div id="cubuk" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav"></ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="">ENGLISH</a>
-        <li><a href="">ANA SAYFA</a>
-        <li><a href="">İNDİR</a>
-        <li><a href="">FORUM</a>
-        <li><a href="">WİKİ</a>
-        <li><a href="">BUGS</a>
-        <li><a href="">TEAM</a>
-        <li><a href="">NEDEN PİSİ LINUX?</a>
-        <li><a href="">PİSİ LINUX NEDİR?</a>
-        <li><a href="">SSS</a>
-        <li><a href="">İLETİŞİM</a>
-      </ul>
+    <div class="container">
+      <hgroup class="text-center">
+        <h1>Pisi Linux Ailesi</h1>
+        <h2>Pisi Linux ailesi ile tanışın.</h2>
+      </hgroup>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <figure class="thumbnail">
+            <img src="https://raw.githubusercontent.com/prdsmehmetstc/pisiartwork/master/Logos/pisi-logo.png" class="img-responsive" height="130" />
+            <figcaption class="caption">
+              <h4 class="text-center">PiSi (Paket sistemi)</h4>
+            </figcaption>
+          </figure>
+          <p>Pisi (Açılımı: Packages Installed Successfully as Intended), Python dilinde yazılmış bir paket yönetim sistemidir. Bağımlılıklara bakarak paket oluşturma, kurma, kaldırma, yükseltme ve benzeri işlevleri yerine getirir. XML ile tanımlanmış ve oluşturma
+            süreci bir Python betiği ile verilmiş kaynak paketlerden ikili paketler oluşturur ve bunları bağımlılıklarına bakarak kurup kaldırabilir. Kullanıcı dostu bir çizgelik arayüz ve kapsamlı bir komut yatacı arayüzü içerir.
+        </p></div>
+        <div class="col-sm-12 col-md-4">
+          <figure class="thumbnail">
+            <img src="https://raw.githubusercontent.com/prdsmehmetstc/pisiartwork/master/Logos/comar.png" class="img-responsive" height="130" />
+            <figcaption class="caption">
+              <h4 class="text-center">ÇOMAR (Yapılandırma Yöneticisi)</h4>
+            </figcaption>
+          </figure>
+          <p>ÇOMAR (Açılımı: COnfiguration MAnageR), dizgenin düzgün çalışması için gerekli olan donanım, açılış, ağ, kullanıcı, zaman, görüntü gibi ayarların mümkün olduğu kadar kendiliğinden yapılmasını sağlayan, kullanıcılara bir yetki denetiminde bu ayarları
+            bayağı ve anlaşılır bir biçimde değiştirme olanağı sağlayan bir yazılımdır.
+        </p></div>
+        <div class="col-sm-12 col-md-4">
+          <figure class="thumbnail">
+            <img src="https://raw.githubusercontent.com/prdsmehmetstc/pisiartwork/master/Logos/kaptan.png" class="img-responsive" height="130" />
+            <figcaption class="caption">
+              <h4 class="text-center">Kaptan</h4>
+            </figcaption>
+          </figure>
+          <p>Kaptan, Pisi Linux kurulumu sonrasında ilk açılışta kullanıcıyı masaüstünde karşılayan ve daha sonra masaüstünü kişiselleştirmek için kullanabilen bir ayar sihirbazıdır. Kaptan, Pisi Linux hakkında genel bilgiler verirken kullanıcının masaüstünü
+            daha rahat kullanabilmesi için ağ bağlantıları gibi belli başlı yapılandırma seçeneklerini sunar ve aynı zamanda kullanıcının masaüstünü şahsîleştirmesine de yardımcı olur.
+        </p></div>
+      </div>
     </div>
-  </div>
-</nav>
-<header>
-  <hgroup>
-    <h1>Pisi Linux 1.2</h1>
-    <h1>ÇIKTI!</h1>
-  </hgroup>
-  <button class="btn btn-lg btn-success">Pisi Linux 1.2 KDE İNDİR</button>
-  <div id="lel"></div>
-</header>
-<div>
-  <hgroup>
-    <h1 class="s">Pisi Linux Ailesi</h1>
-    <h4>Pisi Linux ailesi ile tanışın.</h4>
-  </hgroup>
-  <div class="row">
-    <div class="col-sm-6 col-md-4">
-      <figure class="thumbnail">
-        <img src="https://raw.githubusercontent.com/prdsmehmetstc/pisiartwork/master/Logos/pisi-logo.png">
-        <figcaption class="caption">
-          <p>PiSi (Paket sistemi)</p>
-        </figcaption>
-      </figure>
-      <p>Pisi (Açılımı: Packages Installed Successfully as Intended), Python dilinde yazılmış bir paket yönetim sistemidir. Bağımlılıklara bakarak paket oluşturma, kurma, kaldırma, yükseltme ve benzeri işlevleri yerine getirir. XML ile tanımlanmış ve oluşturma
-        süreci bir Python betiği ile verilmiş kaynak paketlerden ikili paketler oluşturur ve bunları bağımlılıklarına bakarak kurup kaldırabilir. Kullanıcı dostu bir çizgelik arayüz ve kapsamlı bir komut yatacı arayüzü içerir.
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <figure class="thumbnail">
-        <img src="https://raw.githubusercontent.com/prdsmehmetstc/pisiartwork/master/Logos/comar.png">
-        <figcaption class="caption">
-          <p>ÇOMAR (Yapılandırma Yöneticisi)</p>
-        </figcaption>
-      </figure>
-      <p>ÇOMAR (Açılımı: COnfiguration MAnageR), dizgenin düzgün çalışması için gerekli olan donanım, açılış, ağ, kullanıcı, zaman, görüntü gibi ayarların mümkün olduğu kadar kendiliğinden yapılmasını sağlayan, kullanıcılara bir yetki denetiminde bu ayarları
-        bayağı ve anlaşılır bir biçimde değiştirme olanağı sağlayan bir yazılımdır.
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <figure class="thumbnail">
-        <img src="https://raw.githubusercontent.com/prdsmehmetstc/pisiartwork/master/Logos/kaptan.png">
-        <figcaption class="caption">
-          <p>Kaptan</p>
-        </figcaption>
-      </figure>
-      <p>Kaptan, Pisi Linux kurulumu sonrasında ilk açılışta kullanıcıyı masaüstünde karşılayan ve daha sonra masaüstünü kişiselleştirmek için kullanabilen bir ayar sihirbazıdır. Kaptan, Pisi Linux hakkında genel bilgiler verirken kullanıcının masaüstünü
-        daha rahat kullanabilmesi için ağ bağlantıları gibi belli başlı yapılandırma seçeneklerini sunar ve aynı zamanda kullanıcının masaüstünü şahsîleştirmesine de yardımcı olur.
-    </div>
-  </div>
-</div>
-<footer>
-  <span>© 2015 Pisi Linux</span>
-  <span>
-    <a href="https://twitter.com/pisilinux" target=_blank><i class="fa fa-twitter-square fa-3x"></i></a>
-    <a href="https://www.facebook.com/Pisilinux" target=_blank><i class="fa fa-facebook-square fa-3x"></i></a>
-    <a href="https://github.com/pisilinux" target=_blank><i class="fa fa-github-square fa-3x"></i></a>
-    <a href="https://plus.google.com/communities/113565681602860915332" target=_blank><i class="fa fa-google-plus-square fa-3x"></i></a>
-  </span>
-</footer>
-<link href='https://fonts.googleapis.com/css?family=Exo:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <footer>
+      <div class="container">
+        <div class="pull-left">
+          <p>Footer</p>
+        </div>
+        <div class="pull-right">
+          <a href="https://twitter.com/pisilinux" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+          <a href="https://www.facebook.com/Pisilinux" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+          <a href="https://github.com/pisilinux" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+          <a href="https://plus.google.com/communities/113565681602860915332" target="_blank"><i class="fa fa-google-plus-square fa-3x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
