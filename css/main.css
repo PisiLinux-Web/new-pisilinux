@@ -16,7 +16,7 @@ a.navbar-brand{
 
 a.indir {
   border-bottom: 4px solid #7cc576;
-  padding-bottom: 5px;
+  padding-bottom: 5px !important;
   border-radius: 4px;
 }
 
