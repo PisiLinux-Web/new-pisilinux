@@ -1,5 +1,5 @@
 * {
-  font-family: 'Exo', sans-serif !important;
+  font-family: 'Exo', sans-serif;
 }
 
 html {
@@ -56,6 +56,7 @@ footer {
   border-top: 1px solid #EEE;
 }
 
-footer > a{
+footer a{
   text-decoration: none;
+  color: #333;
 }
