@@ -1,0 +1,62 @@
+* {
+  font-family: 'Exo', sans-serif;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body{
+  margin-bottom: 75px;
+}
+
+a.navbar-brand{
+  padding: 5px 0;
+}
+
+#mySlider{
+  padding-top: 80px;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: calc((100vh - 80px)*3/5);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.container{
+  position: relative;
+}
+
+figure > img{
+  max-height: 130px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 25px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-top: 1px solid #EEE;
+}
+
+footer a{
+  text-decoration: none;
+  color: #333;
+}
