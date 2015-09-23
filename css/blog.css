@@ -1,1 +1,36 @@
-*{margin:0;padding:0;}
+* {
+  font-family: 'Exo', sant-serif;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body{
+  margin-bottom: 75px;
+}
+
+a.navbar-brand{
+  padding: 5px 0;
+}
+
+a.indir {
+  border-bottom: 4px solid #7cc576;
+  padding-bottom: 5px !important;
+  border-radius: 4px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 25px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-top: 1px solid #EEE;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
