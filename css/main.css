@@ -52,7 +52,7 @@ figure > img{
   max-height: 130px;
 }
 
-#dip {
+footer {
   position: absolute;
   bottom: 0;
   padding-top: 25px;
@@ -62,7 +62,7 @@ figure > img{
   border-top: 1px solid #EEE;
 }
 
-#dip a{
+footer a{
   text-decoration: none;
   color: #333;
 }
