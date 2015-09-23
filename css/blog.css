@@ -23,6 +23,13 @@ a.navbar-brand{
 aside {
   float: right;
   text-align: left;
+  width: 30%;
+}
+
+div.yazilar {
+  float: left;
+  width: 70%;
+  padding-left: 20%;
 }
 
 footer {
