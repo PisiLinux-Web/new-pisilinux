@@ -16,7 +16,13 @@ a.navbar-brand{
 }
 
 .container{
+  padding-top:80px;
   position: relative;
+}
+
+aside {
+  float: right;
+  text-align: left;
 }
 
 footer {
