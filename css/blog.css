@@ -20,6 +20,11 @@ a.navbar-brand{
   position: relative;
 }
 
+aside {
+  float: right;
+  text-align: left;
+}
+
 footer {
   position: absolute;
   bottom: 0;
