@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pisi Linux</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/blog.css" rel="stylesheet">
-    <link media="(max-width: 500px)" href="css/blog-mobil.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
@@ -49,25 +49,35 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <header class="baslik">
-    
-    </header>
     <section class="container">
-      <aside class="ana-sag">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas ac justo id ex rutrum tempor et sed quam.</p>
-        <p>Vestibulum convallis nibh magna, id suscipit justo iaculis id. Integer vulputate eget magna id sollicitudin. Etiam gravida tellus vitae quam congue dignissim.</p>
+      <section class="col-md-9 col-sm-12">
+        <article>
+          <p>
+            Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+          </p>
+        </article>
+        <article>
+          <p>
+            Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+          </p>
+        </article>
+      </section>
+      <aside class="col-md-3 col-sm-12 ">
+        <form class="search" action="index.html" method="post" role="form">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Ara!</button>
+            </span>
+          </div>
+        </form>
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active"><a href="javascript:;">Kategoriler</a></li>
+          <li role="presentation"><a href="#">Duyuru</a></li>
+          <li role="presentation"><a href="#">Geliştirici Notları</a></li>
+        </ul>
       </aside>
-      <div class="yazilar">
-        <section class="ana-blog-giris">
-          <img src="">
-          <article class="ana-blog-yazi"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus tempor mauris vel gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas ac justo id ex rutrum tempor et sed quam. Vestibulum convallis nibh magna, id suscipit justo iaculis id. Integer vulputate eget magna id sollicitudin. Etiam gravida tellus vitae quam congue dignissim. Morbi non odio nec odio ultrices consequat nec eget lectus. Integer placerat, neque egestas commodo volutpat, odio tortor dapibus neque, non vehicula urna ligula sed risus. Duis nec lacinia lectus. Vestibulum a posuere neque, sed fermentum dolor. Mauris ultricies nec neque et iaculis. Nam venenatis eget augue in gravida. Maecenas pellentesque molestie mattis. Pellentesque urna mauris, porta sit amet augue id, sollicitudin tincidunt mi. Sed tempor ligula tortor.</article>
-        </section>
-        <section class="ana-blog-giris">
-          <img src="">
-          <article class="ana-blog-yazi"><p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras tempor felis id aliquet blandit. Cras metus risus, imperdiet quis placerat ut, congue sit amet lorem. Donec a eros quis nulla suscipit cursus. Aliquam tempus, ex vel lobortis venenatis, nisl magna interdum arcu, nec feugiat leo velit a sem. Phasellus non tincidunt lorem, sed aliquam odio. Duis quis vehicula leo, ut ultricies quam. Vestibulum id felis neque. Maecenas tempor quis libero ut pellentesque. Aenean ac eros risus. Pellentesque volutpat tortor sed sapien consequat, a auctor tortor condimentum. Ut ullamcorper risus et luctus aliquet.</article>
-        </section>
-      </div>
+      <div class="clearfix"></div>
     </section>
     <footer>
       <div class="container">

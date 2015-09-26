@@ -1,48 +1,30 @@
-* {
-  font-family: 'Exo', sant-serif;
-}
 
-html {
-  position: relative;
-  min-height: 100%;
+aside{
+  padding: 0 !important;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
-
-body{
-  margin-bottom: 75px;
+ul.nav-stacked{
 }
-
-a.navbar-brand{
-  padding: 5px 0;
+ul.nav-stacked li a{
+  padding: 8px 15px;
+  border-radius: 0;
 }
-
-section.container{
-  padding-top:80px;
-  position: relative;
-}
-
-aside {
-  float: right;
-  text-align: left;
-  width: 30%;
-}
-
-div.yazilar {
-  float: left;
-  width: 70%;
-  padding-left: 20%;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  padding-top: 25px;
-  width: 100%;
-  height: 60px;
-  background-color: #fff;
-  border-top: 1px solid #EEE;
-}
-
-footer a {
-  text-decoration: none;
+ul.nav-stacked li.active a{
+  background-color: transparent;
   color: #333;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.search{
+  border-radius: 0;
+}
+.search input{
+  border-radius: 0;
+  border: none;
+}
+.search button{
+  border-radius: 0;
+  border: none;
+  border-left: 1px solid #ddd;
 }

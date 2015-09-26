@@ -7,45 +7,23 @@ html {
   min-height: 100%;
 }
 body{
+  padding-top: 100px;
   margin-bottom: 75px;
 }
 
+/* Begin Top Navbar */
 a.navbar-brand{
   padding: 5px 0;
 }
+/* End Top Navbar */
 
-#mySlider{
-  padding-top: 80px;
-}
-
-.carousel,
-.item,
-.active {
-    height: 100%;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-.fill {
-    width: 100%;
-    height: calc((100vh - 80px)*3/5);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
+/* Begin Container */
 .container{
   position: relative;
 }
+/* End Container */
 
-figure > img{
-  max-height: 130px;
-}
-
+/* Begin Footer */
 footer {
   position: absolute;
   bottom: 0;
@@ -60,3 +38,4 @@ footer a{
   text-decoration: none;
   color: #333;
 }
+/* End Footer */
