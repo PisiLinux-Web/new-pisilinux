@@ -1,0 +1,26 @@
+/* Begin Slider */
+#mySlider{
+  margin-top: -20px;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: calc((100vh - 80px)*3/5);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* End Slider */
