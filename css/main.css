@@ -15,7 +15,9 @@ a.navbar-brand{
 }
 
 #mySlider{
-  padding-top: 80px;
+	min-width: 100%;
+	top: 50px;
+	margin-bottom: 50px;
 }
 
 .carousel,
@@ -59,4 +61,17 @@ footer {
 footer a{
   text-decoration: none;
   color: #333;
+}
+
+textarea {
+	resize: none;
+}
+
+.navbar-brand img {
+	max-width: auto;
+	max-height: 100%;
+}
+
+#content {
+	padding-top: 10px;
 }

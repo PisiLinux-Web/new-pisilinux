@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pisi Linux</title>
-
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -15,6 +19,55 @@
     <![endif]-->
   </head>
   <body>
+	<div id="contact-dialog" class="modal fade" role="dialog">
+  		<div class="modal-dialog">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<button type="button" class="close" data-dismiss="modal">&times;</button>
+  					<h4 class="modal-title">Mesaj Gönder</h4>
+  				</div>
+  				<div class="modal-body">
+  					<ul id="errors"></ul>
+  					<form role="form" id="contact-form">
+  						<div class="form-group">
+  							<label for="name">İsim:</label>
+  							<input type="text" id="name" class="form-control" name="name" data-validetta="required,minLength[3]" required/>
+  						</div>
+  						<div class="form-group">
+  							<label for="email">E-Posta:</label>
+  							<input type="email" id="email" class="form-control" name="email" data-validetta="required,minLength[3]" required/>
+  						</div>
+  						<div class="form-group">
+  							<label for="message">İleti</label>
+  							<textarea cols="5" class="form-control" id="message" name="message" data-validetta="required,minLength[3]" required></textarea>
+  						</div>
+  					</form>
+  				</div>
+  				<div class="modal-footer">
+  					<button type="submit" id="button-send" class="btn btn-primary" data-dismiss="modal">Gönder</button>
+  					<button type="button" id="button-cancel" class="btn btn-default" data-dismiss="modal">Vazgeç</button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	
+  	<div id="sent-dialog" class="modal fade" role="dialog">
+  		<div class="modal-dialog">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<button type="button" class="close" data-dismiss="modal">&times;</button>
+  					<h4 class="modal-title"><span class="glyphicon glyphicon-ok"></span> Gönderildi</h4>
+  				</div>
+  				<div class="modal-body">
+  					<p>Mesaj Gönderildi.</p>
+  				</div>
+  				<div class="modal-footer">
+  					<button type="button" class="btn btn-default" data-dismiss="modal">Tamam</button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	
     <nav class="navbar navbar-default navbar-fixed-top navbar-header">
       <div class="container">
         <div class="navbar-header">
@@ -24,7 +77,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="img/logo.png" width="75" height="75" /></a>
+          <a class="navbar-brand" href="#"><img alt="Pisilinux" src="img/logo.png" /></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -35,7 +88,7 @@
             <li><a href="#">Soru & Cevap</a></li>
             <li><a href="#">Belgeler</a></li>
             <li><a href="#">Hata Takip</a></li>
-            <li><a href="#">İletişim</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#contact-dialog">İletişim</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Türkçe <span class="caret"></span>
@@ -47,7 +100,7 @@
               </ul>
             </li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
     <header id="mySlider" class="carousel slide">
@@ -74,7 +127,8 @@
             <span class="icon-next"></span>
         </a>
     </header>
-    <section class="container">
+    
+    <section id="content" class="container">
       <hgroup class="text-center">
         <h1>Pisi Linux Ailesi</h1>
         <h2>Pisi Linux ailesi ile tanışın.</h2>
