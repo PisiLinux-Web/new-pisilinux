@@ -15,12 +15,14 @@
 
 .fill {
     width: 100%;
-    height: calc((100vh - 80px)*3/5);
+    height: 45vh;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
-
+article p{
+  text-indent: 15px;
+}
 /* End Slider */
