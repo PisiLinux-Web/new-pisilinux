@@ -1,6 +1,6 @@
 /* Begin Slider */
 #mySlider{
-  margin-top: -20px;
+    margin-top: -21px;
 }
 
 .carousel,
@@ -15,14 +15,152 @@
 
 .fill {
     width: 100%;
-    height: 45vh;
+    height: calc(100vh - 100px);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
-article p{
-  text-indent: 15px;
+
+@media ( max-height: 400px ){
+    .fill{
+        height: calc(100vh - 79px);
+    }
 }
 /* End Slider */
+
+/* Hgroup */
+section.container hgroup{
+    height: 90px;
+}
+
+section.container a{
+    height: 90px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 30px 0;
+    transition: .2s background;
+}
+
+
+/* Article */
+article p{
+    text-indent: 15px;
+}
+
+/* Begin Top Navbar */
+.static-nav {
+    position: absolute;
+    z-index: 99999;
+    background: transparent;
+    border: none;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav.static-nav li {
+    padding-top: 50px;
+    margin-left: 5px;
+}
+
+nav.static-nav > .container > #navbar > ul.nav > li > a {
+    font-size: 16px;
+    padding: 10px;
+    color: #eee;
+    background-color: transparent;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px #000;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+nav.static-nav > .container > #navbar > ul.nav > li > a::before,
+nav.static-nav > .container > #navbar > ul.nav > li > a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+nav.static-nav > .container > #navbar > ul.nav > li > a::before {
+    top: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+nav.static-nav > .container > #navbar > ul.nav > li > a::after {
+    bottom: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+nav.static-nav > .container > #navbar > ul.nav > li > a:hover,
+nav.static-nav > .container > #navbar > ul.nav > li > a:focus {
+    color: #fff;
+}
+
+nav.static-nav > .container > #navbar > ul.nav > li > a:hover::before,
+nav.static-nav > .container > #navbar > ul.nav > li > a:focus::before,
+nav.static-nav > .container > #navbar > ul.nav > li > a:hover::after,
+nav.static-nav > .container > #navbar > ul.nav > li > a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.static-nav a.navbar-brand {
+    display: none;
+}
+
+.navbar-fixed-top .navbar-nav > li > .dropdown-menu {
+    margin-top: -2px;
+    border-top: 1px solid #eee;
+    right: -1px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #444;
+}
+
+a.navbar-brand {
+    padding: 0;
+}
+
+ul.dropdown-menu{
+    padding: 0;
+}
+
+ul.dropdown-menu li{
+    padding-top: 0;
+    margin-left: 0;
+}
+
+ul.dropdown-menu li a{
+    color: #333;
+    text-shadow: none;
+}
+
+ul.dropdown-menu li a:hover{
+    color: #333;
+    background-color: #ddd;
+}
+
+/* End Top Navbar */

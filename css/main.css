@@ -1,41 +1,56 @@
 * {
-  font-family: 'Exo', sans-serif;
+    font-family: 'Exo', sans-serif;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
-}
-body{
-  padding-top: 100px;
-  margin-bottom: 75px;
+    position: relative;
+    min-height: 100%;
 }
 
-/* Begin Top Navbar */
-a.navbar-brand{
-  padding: 5px 0;
+body {
+    margin-bottom: 75px;
 }
-/* End Top Navbar */
 
 /* Begin Container */
-.container{
-  position: relative;
+.container {
+    position: relative;
 }
+
+section.row + section.row {
+    margin-top: 15px;
+}
+
 /* End Container */
 
 /* Begin Footer */
 footer {
-  position: absolute;
-  bottom: 0;
-  padding-top: 25px;
-  width: 100%;
-  height: 60px;
-  background-color: #fff;
-  border-top: 1px solid #EEE;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-top: 1px solid #EEE;
 }
 
-footer a{
-  text-decoration: none;
-  color: #333;
+footer aside{
+    height: 60px;
+    line-height: 60px;
 }
+
+footer aside a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    height: 60px;
+    transition: color .3s;
+}
+
+footer aside a:hover{
+    color: #1b6d85;
+}
+
+footer aside a i{
+    vertical-align: middle;
+}
+
 /* End Footer */
