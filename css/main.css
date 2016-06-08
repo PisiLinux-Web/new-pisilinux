@@ -8,8 +8,15 @@ html {
 }
 
 body {
+    padding-top: 100px;
     margin-bottom: 75px;
 }
+
+/* Navbar */
+a.navbar-brand {
+    padding: 0;
+}
+
 
 /* Begin Container */
 .container {

@@ -1,3 +1,7 @@
+body{
+    padding-top: 0;
+}
+
 /* Begin Slider */
 #mySlider{
     margin-top: -21px;
@@ -42,6 +46,16 @@ section.container a{
     font-size: 20px;
     padding: 30px 0;
     transition: .2s background;
+}
+
+@media ( max-width: 360px ){
+    section.container a{
+        height: auto;
+    }
+
+    section.container hgroup{
+        height: auto;
+    }
 }
 
 

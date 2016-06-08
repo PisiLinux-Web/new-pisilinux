@@ -1,28 +1,3 @@
-header.wallpaper{
-  position: relative;
-  margin-top: -20px;
-  margin-bottom: 20px;
-  background-image: url('../img/wallpaper/Pisi-Material-7.png');
-  width: 100%;
-  height: 50vh;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-header.wallpaper figure{
-  padding-top: 8vh;
-}
-header.wallpaper figure img{
-  margin-left: calc((100vw - 130px)/2);
-}
-header.wallpaper figure figcaption{
-  color: #fff;
-  text-shadow: 0 0 5px #333;
-  font-size: 5vh;
-  text-align: center;
-}
 aside.blog-right{
   padding: 0 !important;
   border: 1px solid #ddd;
